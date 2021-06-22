@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+:root{
+    --background: black;
+    --red: #ff0000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error{
+    color: var(--red);
+}
+
+.container{
+    width: 1200px;
+    display: flex;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    align-items: center;
+    
+}
+
+.logo_eplayers{
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.menu_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    height: 30px;
+    top: 39px;
+}
+
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container_banner{
+    display: flex;
+    width: 100%;
+    height: 522px;
+    align-items: center;
+    background: linear-gradient(90deg, #00E3FE 17.06%, #00A2E7 42.13%, #030622 76.42%);
+    margin: auto;
+}
+
+.img_banner{
+    margin-left: 125px;
+    margin: auto;
+}
+
+.box_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 0px;
+    margin: auto;
+}
+
+h1{
+    font-size: 72px;
+    color: #FFFFFF;
+    font-family: 'Barlow', sans-serif;   
+}
+
+.box_banner p{
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    margin: 7px 42px;
+}
+
+.box_banner button{
+    background-color: #EF3232;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    width: 287px;
+    height: 78px;
+    border-radius: 10px;
+    font-size: 36px;
+    margin: 10px 80px;
+}
+
+.container_jogos{
+    background-color: black;
+    height: 143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.box_jogos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1500px;
+    height: 144px;
+    margin-left: 230px;
+    margin: auto;
+}
+
+.container_particpar{
+    background-image: url(assets/background\ cp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 772px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.retangulo_particpar{
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0 19%, 100% 8%, 100% 78%, 0 91%);
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 770px;
+    margin: auto;
+}
+
+.como_participar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 240px;
+    width: 634px;
+    height: 487px;
+}
+
+.como_participar h2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.como_participar span{
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    color: white;
+    margin: 10px 0;
+    margin: auto;
+}
+
+.imagem_participar{
+    position: absolute;
+    width: 649;
+    height: 724px;
+    left: 1072px;
+    top: 790px;
+    margin: auto;
+}
+
+.container_partidas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin: auto;
+    height: 158px;
+}
+
+.imgs_sk{
+    width: 80.7px;
+    height: 85.47px;
+}
+
+.imgs_fl{
+    width: 79.71px;
+    height: 85.47px;
+}
+
+.container_partidas{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+
+.box_ao_vivo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1517px;
+}
+
+.box_partidas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 462px;
+    height: 107px;
+    margin: auto;
+    margin-left: -2px;
+}
+
+.p_embreve{
+    width: 88.68px;
+    height: 110px;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 46px;
+    margin: 0px 50px;
+}
+
+.p_jogos{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.span_vs{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.hr_partidas{
+    margin-left: 25px;
+    margin-top: 4px;
+    width: 0px;
+    height: 100px;
+    transform: rotate(0deg);
+}
+
+.box_em_breve{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container_noticias{
+    background: linear-gradient(180deg, #0F251B 27.62%, #161C19 73.65%);
+    height: 1449px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles {
+    height: 570px;
+    width: 247px;
+    border: 2px solid #000000;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.articles img {
+    width: 243px;
+    height: 165px;
+}
+
+.Noticias {
+    width: 1425px;
+    height: 1255px;
+}
+
+#noticia {
+    font-family: 'Barlow', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.article_um {
+    width: 797px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+
+.article_dois {
+    width: 797px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h4{
+    font-family: 'Barlow', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    margin: 20px;
+}
+
+.p_noticia{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    width: 204px;
+    text-align: justify;
+    margin: 21px;
+}
+
+.próximos_jogos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 411px;
+    height: 1170px;
+    margin-left: 896px;
+    margin-top: -1186px;
+}
+
+.box_proximos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.data_proximos{
+    font-family: 'Barlow', sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    margin: 0px 24px;
+}
+
+.p_jogos_2{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.span_vs_2{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.imgs_sk_2{
+    width: 75px;
+    height: 70px;
+}
+
+.imgs_fl_2{
+    width: 75px;
+    height: 70px;
+}
+
+#noticia_2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white; 
+    margin-top: -148px;
+    margin-left: -206px;
+}
+
+.container_footer{
+    background-color: black;
+    height: 462px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box_links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h6{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.h6_redes{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 66px;
+    width: 113px;
+}
+
+.p_h6{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.logo_footer{
+    height: 42px;
+    width: 432px;
+}
+
+.p_cadastro{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+}
+
+input{
+    background: #FFFFFF;
+    border-radius: 5px 0px 0px 5px;
+    width: 284.96px;
+    height: 52px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+.cadastro button{
+    background-color: #0066FF;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    width: 123.55px;
+    height: 52px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.box_cadastro{
+    height: 33px;
+}
+
+.box_redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.insta{
+    width: 46.83px;
+    height: 47px;
+}
+
+.youtube{
+    width: 46.83px;
+    height: 47px;
+}
+
+.facebook{
+    width: 50.81px;
+    height: 47px;
+}
+
+.btn_menu{
+    display: none;
+}

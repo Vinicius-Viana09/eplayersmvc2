@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Players</title>
+    <link rel="stylesheet" href="~/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container container_header">
+            <a href="#"> </a> <img class="logo_eplayers" src="/assets/Logo_Branco.png" alt="logo">
+            <nav class="menu_header">
+                <a href="#Inicio" class="links">Inicio</a>
+                <a href="#Partidas" class="links">Partidas</a>
+                <a href="#Resultados" class="links">Resultados</a>
+                <a href="#Campeonatos" class="links">Campeonatos</a>
+                <a href="#Notícias" class="links">Notícias</a>
+
+                @if (ViewBag.UserName != null)
+                {
+                    <li style="color: #d5379b">Bem vindo @ViewBag._UserName!</li>
+                    <a asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
+                }
+                
+                    <a asp-area="" asp-controller="Login" asp-action="Logar">Login</a>
+
+
+                <li><a asp-area="" asp-controller="Login" asp-action="Logar">Login</a></li>
+            </nav>
+            <a class="btn_menu" href="javascript: void (0)" onclick="botaoDoMenu()"></a>
+            <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="container_footer">
+        <div class="box_links">
+            <div class="container_links">
+                <div>
+                    <h6>Links Úteis</h6>
+                    <p class="p_h6">Regra de utilização</p>
+                    <p class="p_h6">Suporte</p>
+                    <p class="p_h6">Central de Ajuda</p>
+                    <p class="p_h6">Contato</p>
+                </div>
+
+                <div>
+                    <h6>Páginas</h6>
+                    <p class="p_h6">Início</p>
+                    <p class="p_h6">Campeonatos</p>
+                    <p class="p_h6">ResultadosLogin/ Cadastro</p>
+                    <p class="p_h6">Notícias</p>
+                    <p class="p_h6">Login/ Cadastro</p>
+                </div>
+            </div>
+        </div>
+        <img class="logo_footer" src="/assets/Logo_Branco.png" alt="">
+        <div class="cadastro">
+            <div>
+                <p class="p_cadastro">Faça parte do nosso clan, assine nossa newsletter!</p>
+                <div class="email_cadastro">
+                    <input type="Email" placeholder="Email">
+                    <button>Cadastrar</button>
+                </div>
+            </div>
+            <div class="box_redes">
+                <h6 class="h4_redes">Siga nos em:</h6>
+                <div class="imgs_redes">
+                    <img class="insta" src="/assets/ig-logo.png" alt="">
+                    <img class="youtube" src="/assets/yt-icon.png" alt="">
+                    <img class="facebook" src="/assets/facebook 1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
