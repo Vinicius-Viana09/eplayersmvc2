@@ -3,53 +3,62 @@
 }
 
 <DOCTYPE html>
+    <link rel="stylesheet" href="/css/style.css">
 
- <section class="container_banner">
-            <img class="img_banner" src="/assets/imagem banner.png" alt="imagem banner">
-            <div class="box_banner">
-                <h1>Liga E-Players</h1>
-                <p>O maior portal de campeonatos online</p>
-                <a href="file:///C:/Users/Usuario/Documents/Vinicius%20Senai/e-players/cadastro_time.html">
-                    <button>Cadastrar Equipe</button>                
-                </a>
+    <section class="container_banner">
+        <img class="img_banner" src="/assets/imagem banner.png" alt="imagem banner">
+        <div class="box_banner">
+            <h1>Liga E-Players</h1>
+            <p>O maior portal de campeonatos online</p>
+                <a class="button" asp-area="" asp-controller="Equipe" asp-action="Cadastrar" >Cadastrar Equipe</a>
+        </div>
+    </section>
+
+    <section class="container_jogos">
+        <div class="box_jogos">
+            <img src="/assets/fortnite-logo-1 1.png" alt="logo fortnite">
+            <img src="/assets/lol-logo.png" alt="logo lol">
+            <img src="/assets/CSGO-logo.png" alt="logo csgo">
+            <img src="/assets/valorant-logo 1.png" alt="logo valorant">
+            <img src="/assets/mortal-kombat-11-logo-0F830F6176-seeklogo 1.png" alt="logo mk">
+        </div>
+    </section>
+
+    <section class="container_particpar">
+        <div class="retangulo_particpar">
+            <div class="como_participar">
+                <h2>Como participar das ligas?</h2>
+                <span>Lorem Ipsum é simplesmente uma simulação de texto da
+                    indústria tipográfica e de impressos, e vem sendo utilizado
+                    desde o século XVI, quando um impressor desconhecido
+                    pegou uma bandeja de tipos e os embaralhou para fazer
+                    um livro de modelos de tipos. Lorem Ipsum sobreviveu não
+                    só a cinco séculos, como também ao salto para a
+                    editoração eletrônica, permanecendo essencialmente
+                    inalterado.
+                    Se popularizou na década de 60, quando a
+                    Letraset lançou decalques contendo passagens de Lorem
+                    Ipsum, e mais recentemente quando passou a ser
+                    integrado a softwares de editoração eletrônica como Aldus
+                    PageMaker.</span>
             </div>
-        </section>
+        </div>
+        <img class="imagem_participar" src="/assets/imagem como participar.png" alt="imagem participar">
+    </section>
 
-        <section class="container_jogos">
-            <div class="box_jogos">
-                <img src="/assets/fortnite-logo-1 1.png" alt="logo fortnite">
-                <img src="/assets/lol-logo.png" alt="logo lol">
-                <img src="/assets/CSGO-logo.png" alt="logo csgo">
-                <img src="/assets/valorant-logo 1.png" alt="logo valorant">
-                <img src="/assets/mortal-kombat-11-logo-0F830F6176-seeklogo 1.png" alt="logo mk">
+    <section class="container_partidas">
+        <div class="box_ao_vivo">
+            <p class="p_embreve">Ao Vivo</p>
+            <div class="box_partidas">
+                <p class="p_jogos">sk</p>
+                <img class="imgs_sk" src="/assets/SK 1.png" alt="sk logo">
+                <span class="span_vs">vs</span>
+                <img class="imgs_fl" src="/assets/FLA 1.png" alt="flamengo logo">
+                <p class="p_jogos">Fl</p>
             </div>
-        </section>
-
-        <section class="container_particpar">
-            <div class="retangulo_particpar">
-                <div class="como_participar">
-                    <h2>Como participar das ligas?</h2>
-                    <span>Lorem Ipsum é simplesmente uma simulação de texto da
-                        indústria tipográfica e de impressos, e vem sendo utilizado
-                        desde o século XVI, quando um impressor desconhecido
-                        pegou uma bandeja de tipos e os embaralhou para fazer
-                        um livro de modelos de tipos. Lorem Ipsum sobreviveu não
-                        só a cinco séculos, como também ao salto para a
-                        editoração eletrônica, permanecendo essencialmente
-                        inalterado. 
-                        Se popularizou na década de 60, quando a
-                        Letraset lançou decalques contendo passagens de Lorem
-                        Ipsum, e mais recentemente quando passou a ser
-                        integrado a softwares de editoração eletrônica como Aldus
-                        PageMaker.</span>
-                </div>
-            </div>
-                <img class="imagem_participar" src="/assets/imagem como participar.png" alt="imagem participar">
-        </section>
-
-        <section class="container_partidas">
-            <div class="box_ao_vivo">
-                <p class="p_embreve">Ao Vivo</p>
+            <hr class="hr_partidas">
+            <div class="box_em_breve">
+                <p class="p_embreve">Em Breve</p>
                 <div class="box_partidas">
                     <p class="p_jogos">sk</p>
                     <img class="imgs_sk" src="/assets/SK 1.png" alt="sk logo">
@@ -57,69 +66,71 @@
                     <img class="imgs_fl" src="/assets/FLA 1.png" alt="flamengo logo">
                     <p class="p_jogos">Fl</p>
                 </div>
-                <hr class="hr_partidas">
-                <div class="box_em_breve">
-                    <p class="p_embreve">Em Breve</p>
-                    <div class="box_partidas">
-                        <p class="p_jogos">sk</p>
-                        <img class="imgs_sk" src="/assets/SK 1.png" alt="sk logo">
-                        <span class="span_vs">vs</span>
-                        <img class="imgs_fl" src="/assets/FLA 1.png" alt="flamengo logo">
-                        <p class="p_jogos">Fl</p>
-                    </div>
-                    <div class="box_partidas">
-                        <p class="p_jogos">sk</p>
-                        <img class="imgs_sk" src="/assets/SK 1.png" alt="sk logo">
-                        <span class="span_vs">vs</span>
-                        <img class="imgs_fl" src="/assets/FLA 1.png" alt="flamengo logo">
-                        <p class="p_jogos">Fl</p>
-                    </div>
-        </section>
+                <div class="box_partidas">
+                    <p class="p_jogos">sk</p>
+                    <img class="imgs_sk" src="/assets/SK 1.png" alt="sk logo">
+                    <span class="span_vs">vs</span>
+                    <img class="imgs_fl" src="/assets/FLA 1.png" alt="flamengo logo">
+                    <p class="p_jogos">Fl</p>
+                </div>
+    </section>
 
-        <section class="container_noticias">
-            <div class="box_noticia">
-                <div class="Noticias">
-                    <span id="noticia">Noticias</span>
-                    <div class="article_um">
-                        <article class="articles">
-                            <img src="/assets/T1 1.png" alt="">
-                            <h4>Titulo</h4>
-                            <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um
-                                livro de modelos de tipos.</p>
-                        </article>
-                        <article class="articles">
-                            <img src="/assets/T1 1.png" alt="">
-                            <h4>Titulo</h4>
-                            <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um
-                                livro de modelos de tipos.</p>
-                        </article>
-                        <article class="articles">
-                            <img src="/assets/T1 1.png" alt="">
-                            <h4>Titulo</h4>
-                            <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um
-                                livro de modelos de tipos.</p>
-                        </article>
-                    </div>
-                    <div class="article_dois">
-                        <article class="articles">
-                            <img src="/assets/T1 1.png" alt="">
-                            <h4>Titulo</h4>
-                            <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um
-                                livro de modelos de tipos.</p>
-                        </article>
-                        <article class="articles">
-                            <img src="/assets/T1 1.png" alt="">
-                            <h4>Titulo</h4>
-                            <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um
-                                livro de modelos de tipos.</p>
-                        </article>
-                        <article class="articles">
-                            <img src="/assets/T1 1.png" alt="">
-                            <h4>Titulo</h4>
-                            <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um
-                                livro de modelos de tipos.</p>
-                        </article>
-                    </div>
+    <section class="container_noticias">
+        <div class="box_noticia">
+            <div class="Noticias">
+                <span id="noticia">Noticias</span>
+                <div class="article_um">
+                    <article class="articles">
+                        <img src="/assets/T1 1.png" alt="">
+                        <h4>Titulo</h4>
+                        <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
+                            e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido
+                            pegou uma bandeja de tipos e os embaralhou para fazer um
+                            livro de modelos de tipos.</p>
+                    </article>
+                    <article class="articles">
+                        <img src="/assets/T1 1.png" alt="">
+                        <h4>Titulo</h4>
+                        <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
+                            e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido
+                            pegou uma bandeja de tipos e os embaralhou para fazer um
+                            livro de modelos de tipos.</p>
+                    </article>
+                    <article class="articles">
+                        <img src="/assets/T1 1.png" alt="">
+                        <h4>Titulo</h4>
+                        <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
+                            e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido
+                            pegou uma bandeja de tipos e os embaralhou para fazer um
+                            livro de modelos de tipos.</p>
+                    </article>
+                </div>
+                <div class="article_dois">
+                    <article class="articles">
+                        <img src="/assets/T1 1.png" alt="">
+                        <h4>Titulo</h4>
+                        <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
+                            e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido
+                            pegou uma bandeja de tipos e os embaralhou para fazer um
+                            livro de modelos de tipos.</p>
+                    </article>
+                    <article class="articles">
+                        <img src="/assets/T1 1.png" alt="">
+                        <h4>Titulo</h4>
+                        <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
+                            e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido
+                            pegou uma bandeja de tipos e os embaralhou para fazer um
+                            livro de modelos de tipos.</p>
+                    </article>
+                    <article class="articles">
+                        <img src="/assets/T1 1.png" alt="">
+                        <h4>Titulo</h4>
+                        <p class="p_noticia">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
+                            e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido
+                            pegou uma bandeja de tipos e os embaralhou para fazer um
+                            livro de modelos de tipos.</p>
+                    </article>
+                </div>
             </div>
 
             <div class="próximos_jogos">
@@ -132,7 +143,7 @@
                         <img class="imgs_fl_2" src="/assets/FLA 1.png" alt="flamengo logo">
                         <p class="p_jogos_2">Fl</p>
                     </div>
-                    <p class="data_proximos">01/12/2021  19:00</p>
+                    <p class="data_proximos">01/12/2021 19:00</p>
                 </div>
                 <div class="box_tabela">
                     <div class="box_proximos">
@@ -142,7 +153,7 @@
                         <img class="imgs_fl_2" src="/assets/FLA 1.png" alt="flamengo logo">
                         <p class="p_jogos_2">Fl</p>
                     </div>
-                    <p class="data_proximos">01/12/2021  19:00</p>
+                    <p class="data_proximos">01/12/2021 19:00</p>
                 </div>
                 <div class="box_tabela">
                     <div class="box_proximos">
@@ -152,7 +163,7 @@
                         <img class="imgs_fl_2" src="/assets/FLA 1.png" alt="flamengo logo">
                         <p class="p_jogos_2">Fl</p>
                     </div>
-                    <p class="data_proximos">01/12/2021  19:00</p>
+                    <p class="data_proximos">01/12/2021 19:00</p>
                 </div>
                 <div class="box_tabela">
                     <div class="box_proximos">
@@ -162,7 +173,7 @@
                         <img class="imgs_fl_2" src="/assets/FLA 1.png" alt="flamengo logo">
                         <p class="p_jogos_2">Fl</p>
                     </div>
-                    <p class="data_proximos">01/12/2021  19:00</p>
+                    <p class="data_proximos">01/12/2021 19:00</p>
                 </div>
                 <div class="box_tabela">
                     <div class="box_proximos">
@@ -172,7 +183,7 @@
                         <img class="imgs_fl_2" src="/assets/FLA 1.png" alt="flamengo logo">
                         <p class="p_jogos_2">Fl</p>
                     </div>
-                    <p class="data_proximos">01/12/2021  19:00</p>
+                    <p class="data_proximos">01/12/2021 19:00</p>
                 </div>
                 <div class="box_tabela">
                     <div class="box_proximos">
@@ -182,7 +193,7 @@
                         <img class="imgs_fl_2" src="/assets/FLA 1.png" alt="flamengo logo">
                         <p class="p_jogos_2">Fl</p>
                     </div>
-                    <p class="data_proximos">01/12/2021  19:00</p>
+                    <p class="data_proximos">01/12/2021 19:00</p>
                 </div>
             </div>
-        </section>
+    </section>

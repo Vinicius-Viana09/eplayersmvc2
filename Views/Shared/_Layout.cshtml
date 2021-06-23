@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Players</title>
-    <link rel="stylesheet" href="~/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -20,16 +20,15 @@
                 <a href="#Campeonatos" class="links">Campeonatos</a>
                 <a href="#Notícias" class="links">Notícias</a>
 
-                @if (ViewBag.UserName != null)
+                <a href=""> @if (ViewBag.UserName != null)
                 {
                     <li style="color: #d5379b">Bem vindo @ViewBag._UserName!</li>
                     <a asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
                 }
-                
-                    <a asp-area="" asp-controller="Login" asp-action="Logar">Login</a>
 
 
-                <li><a asp-area="" asp-controller="Login" asp-action="Logar">Login</a></li>
+                <li><a class="_login" asp-area="" asp-controller="Login" asp-action="Logar">Login</a></li>
+                </a>
             </nav>
             <a class="btn_menu" href="javascript: void (0)" onclick="botaoDoMenu()"></a>
             <i class="fas fa-bars"></i>

@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    display: flex;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    align-items: center;
+    
+}
+
+.logo_eplayers{
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.menu_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    height: 30px;
+    top: 39px;
+}
+
+.btn_menu i{
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner_times{
+    background-image: url(assets/Rectangle\ 9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 237px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-size: 40px;  
+}
+
+.container_main{
+    background-color: #1E1C21;
+    height: 779px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box_cadastro{
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    box-shadow: 1px 1px 20px 4px #000000;
+    height: 340px;
+    width: 770px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.input_grande{
+    height: 30px;
+    width: 575px;
+}
+
+.input_pequeno{
+    height: 30px;
+    width: 160px;
+    font-size: 16px;
+}
+
+.botão_1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: white;
+    height: 40px;
+    width: 257px;
+    background: #001F70;
+    border-radius: 10px;
+}
+
+.box_exemplo table{
+    height: 115px;
+    width: 770px; 
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-spacing: 0;
+}
+
+tr{
+    text-align: left;
+}
+
+.titulo_table{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+td{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.img_table{
+    height: 38px;
+    width: 38px;
+}
+
+.container_footer{
+    background-color: black;
+    height: 462px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box_links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h6{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.h6_redes{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 66px;
+    width: 113px;
+}
+
+.p_h6{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.logo_footer{
+    height: 42px;
+    width: 432px;
+}
+
+.p_cadastro{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+}
+
+input{
+    background: #FFFFFF;
+    border-radius: 5px 0px 0px 5px;
+    width: 284.96px;
+    height: 52px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+.cadastro button{
+    background-color: #0066FF;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    width: 123.55px;
+    height: 52px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.box_redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.insta{
+    width: 46.83px;
+    height: 47px;
+}
+
+.youtube{
+    width: 46.83px;
+    height: 47px;
+}
+
+.facebook{
+    width: 50.81px;
+    height: 47px;
+}
+
+
+.banner_jodador{
+    background-image: url(assets/banner\ jogador\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 237px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_amain{
+    background-color: #1E1C21;
+    height: 1110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box_cadastro_2{
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    box-shadow: 1px 1px 20px 4px #000000;
+    height: 629px;
+    width: 770px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botão_2{
+    background-color: #C31616;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: white;
+    height: 40px;
+    width: 257px;
+    border-radius: 10px;
+}
+
+.btn_menu{
+    display: none;
+}
+
+@media (max-width: 420px){
+    .container{
+        width: 80vw;
+    }
+
+    .container_header{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu_header{
+        display: none;
+
+        height: 300px;
+        width: 100%;
+        padding-left: 10vw;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: unset;
+
+        position: absolute;
+        left: 0;
+        top: 60px;
+        
+        background-color: black;
+    }
+
+    .btn_menu i{
+        display: inline-block;
+    }
+
+    .logo_eplayers{
+        height: 25px;
+        margin-right: unset;
+    }
+
+    .box_cadastro{
+        width: 350px;
+    }
+
+    .input_grande{
+        width: 310px;
+    }
+
+    .box_exemplo table{
+        height: 157px;
+        width: 350px;
+    }
+
+    .logo_footer{
+        height: 23px;
+        width: 170px;
+    }
+}

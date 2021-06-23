@@ -60,6 +60,14 @@ header{
     font-family: 'Roboto', sans-serif;
 }
 
+._login{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .container_banner{
     display: flex;
     width: 100%;
@@ -97,7 +105,7 @@ h1{
     margin: 7px 42px;
 }
 
-.box_banner button{
+.box_banner .button{
     background-color: #EF3232;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -469,7 +477,7 @@ input{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 28px;
-    width: 123.55px;
+    width: 158.55px;
     height: 52px;
     border-radius: 0px 5px 5px 0px;
 }
@@ -482,7 +490,7 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .insta{
